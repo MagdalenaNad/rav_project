@@ -8,8 +8,15 @@ public class VehiclesDao {
     private ArrayList<Vehicles> vehiclesArrayList = new ArrayList<>();
 
 
+    // met.: dodawanie pojazdu, nie powinna pozwalać na dodanie duplikatu
     public void addVehicle(Vehicles v) {
-        vehiclesArrayList.add(v);
+        // sprawdzenie, czy v to nie duplikat
+        boolean dubel = false;
+        for (Vehicles p:
+             vehiclesArrayList) {
+            if (p.equals(v)) dubel=true;
+        } // for
+        if (dubel==false) vehiclesArrayList.add(v);
     }
 
     public ArrayList<Vehicles> getVehiclesArrayList() {
