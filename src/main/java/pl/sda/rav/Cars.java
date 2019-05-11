@@ -7,11 +7,12 @@ public class Cars extends Vehicles{
     private String bodyType; // typ nadwozia
     private int maxDistanceKm;  // zasięg w kilometrach
 
+    // konstruktor
     public Cars(String vin, String name, LocalDate productionDate, String bodyType, int maxDistanceKm) {
         super(vin, name, productionDate);  // pola klasy nadrzędnej
         this.bodyType = bodyType;
         this.maxDistanceKm = maxDistanceKm;
-    }
+    }  // konstruktor
 
     public String getBodyType() {
         return bodyType;
