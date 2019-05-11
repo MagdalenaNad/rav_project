@@ -20,6 +20,12 @@ public class OrderPeriod {
         return stop;
     }
 
+    public boolean isIncluded(LocalDate timeStart, LocalDate timeStop){
+        if (timeStart.isAfter(stop)) return false;
+        if (timeStop.isBefore(start)) return false;
+    return true;
+    }
+
     public int daysOfOrder(){
         Period between = Period.between(start, stop);
         return between.getDays();
