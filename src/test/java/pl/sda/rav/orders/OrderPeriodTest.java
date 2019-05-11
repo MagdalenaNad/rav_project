@@ -1,4 +1,4 @@
-package pl.sda.rav;
+package pl.sda.rav.orders;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
