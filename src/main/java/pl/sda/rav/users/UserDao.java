@@ -5,7 +5,7 @@ import pl.sda.rav.users.User;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserDao implements Comparable<User> {
+public class UserDao {
 
     private List<User> users = new ArrayList<>();
 
@@ -14,10 +14,7 @@ public class UserDao implements Comparable<User> {
                 // dodanie użytkownika
     }
 
-    @Override
-    public int compareTo(User o) {
-        return 0;
-    }
+
 
 
     //Stwórz klasę do przechowywania i aktualizacji użytkowników: UsersDao.
