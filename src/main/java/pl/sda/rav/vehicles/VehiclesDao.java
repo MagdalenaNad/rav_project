@@ -18,11 +18,4 @@ public class VehiclesDao {
         return list;
     }
 
-    /*
-    public ArrayList<Vehicles> getVehiclesArrayList() {
-        return vehiclesArrayList.sort();
-    }
-
-    Comparator<Person> comparator = Comparator.comparing(Person::getName) .thenComparing(Person::getAge);
-     */
 }  // class VehiclesDao
