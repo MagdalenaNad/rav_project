@@ -3,8 +3,7 @@ package pl.sda.rav.orders;
 import pl.sda.rav.vehicles.Vehicles;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class OrdersDao {
 
@@ -21,6 +20,26 @@ public class OrdersDao {
             }
         }
         return true;
+    }
+
+    public List<Order> clientHistory(String customer){
+        List<Order> clientHistoryList = new ArrayList<>();
+        for (Order order : orders) {
+            if (order.getCustomer().equals(customer)) clientHistoryList.add(order);
+        }
+        return clientHistoryList;
+    }
+
+    public Map<String,List<Order>> mapOfClientsHistory(){
+        Map<String, List<Order>> mapOfClients = new HashMap<>();
+        Set<String> customers = new HashSet<>();
+        for (Order order : orders) {
+            customers.add(order.getCustomer());
+        }
+        for (String customer : customers) {
+            mapOfClients.put(customer,clientHistory(customer));
+        }
+        return mapOfClients;
     }
 
 }
