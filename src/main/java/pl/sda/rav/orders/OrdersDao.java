@@ -10,7 +10,7 @@ public class OrdersDao {
 
     private List<Order> orders;
 
-    public void makeOrder(User customer, Vehicles vehicles, OrderPeriod orderPeriod ){
+    public void makeOrder(String customer, Vehicles vehicles, OrderPeriod orderPeriod ){
         orders.add(new Order(customer,vehicles, orderPeriod));
     }
 
