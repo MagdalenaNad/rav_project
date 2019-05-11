@@ -1,4 +1,6 @@
-package pl.sda.rav;
+package pl.sda.rav.orders;
+
+import pl.sda.rav.vehicles.Vehicles;
 
 public class Order {
     private static int COUNT=1;
