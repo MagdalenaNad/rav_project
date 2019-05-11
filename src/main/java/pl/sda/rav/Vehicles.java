@@ -13,4 +13,13 @@ public class Vehicles {  // pojazdy
         this.name = name;
         this.productionDate = productionDate;
     }
+
+    @Override
+    public String toString() {
+        return "Vehicles{" +
+                "vin='" + vin + '\'' +
+                ", name='" + name + '\'' +
+                ", productionDate=" + productionDate +
+                '}';
+    }
 }  // class Vehicles

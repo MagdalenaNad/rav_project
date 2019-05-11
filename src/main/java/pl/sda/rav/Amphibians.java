@@ -38,4 +38,14 @@ public class Amphibians extends Vehicles {
     public void setMaxDistanceMiles(int maxDistanceMiles) {
         this.maxDistanceMiles = maxDistanceMiles;
     }
+
+    @Override
+    public String toString() {
+        return "Amphibians{" +
+                super.toString()+
+                "displacementTon=" + displacementTon +
+                ", maxDistanceKm=" + maxDistanceKm +
+                ", maxDistanceMiles=" + maxDistanceMiles +
+                '}';
+    }
 } // class Amphibians extends Vehicles
