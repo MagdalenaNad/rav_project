@@ -18,8 +18,8 @@ public class VehiclesDao implements Comparable<Vehicles>{
 
     @Override
     public int compareTo(Vehicles v) {
-return -1;
-    //    return (v.getProductionDate().getYear());
+
+        return (v.getProductionDate().getYear());
     }
 
 /*

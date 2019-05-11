@@ -14,6 +14,8 @@ public abstract class Vehicles{  // pojazdy
         this.productionDate = productionDate;
     }
 
+
+
     public String getVin() {
         return vin;
     }
