@@ -1,19 +1,23 @@
 package pl.sda.rav;
 
+import pl.sda.rav.users.User;
+
 import java.util.ArrayList;
+import java.util.List;
 
-public class UserDao implements User {
+public class UserDao implements Comparable<User> {
 
-    private ArrayList<User> users = new ArrayList<>();
+    private List<User> users = new ArrayList<>();
 
     public void addUser (User user){
-        users.add(user)
+        users.add(user);
                 // dodanie użytkownika
     }
 
-  public void compareTo (users login){
-
-   }
+    @Override
+    public int compareTo(User o) {
+        return 0;
+    }
 
 
     //Stwórz klasę do przechowywania i aktualizacji użytkowników: UsersDao.
