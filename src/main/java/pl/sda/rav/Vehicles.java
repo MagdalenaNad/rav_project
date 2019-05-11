@@ -6,9 +6,9 @@ import java.time.LocalDate;
 public abstract class Vehicles{  // pojazdy
     private String vin;  // identyfikator
     private String name; // nazwa
-    private LocalDate productionDate;  // data produkcji
+    private int productionDate;  // data (rok) produkcji
 
-    public Vehicles(String vin, String name, LocalDate productionDate) {
+    public Vehicles(String vin, String name, int productionDate) {
         this.vin = vin;
         this.name = name;
         this.productionDate = productionDate;
@@ -30,11 +30,11 @@ public abstract class Vehicles{  // pojazdy
         this.name = name;
     }
 
-    public LocalDate getProductionDate() {
+    public int getProductionDate() {
         return productionDate;
     }
 
-    public void setProductionDate(LocalDate productionDate) {
+    public void setProductionDate(int productionDate) {
         this.productionDate = productionDate;
     }
 
