@@ -15,8 +15,8 @@ public abstract class Vehicles implements Comparable<Vehicles>{  // pojazdy
 
     @Override
     public int compareTo(Vehicles o) {
-        if (productionDate.compareTo(o.productionDate) !=0){
-            return (productionDate.compareTo(o.productionDate));
+        if ((productionDate-o.productionDate) !=0){
+            return ((productionDate-o.productionDate));
         }
         return name.compareTo(o.name);
     } // compareTo()
