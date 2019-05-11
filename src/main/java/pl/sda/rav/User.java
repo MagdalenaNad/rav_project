@@ -4,9 +4,9 @@ public class User {
 
     private String login;
     private String password;
-    private String userType;
+    private UserType userType;
 
-    public User(String login, String password, String userType) {
+    public User(String login, String password, UserType userType) {
         this.login = login;
         this.password = password;
         this.userType = userType;
@@ -20,7 +20,7 @@ public class User {
         return password;
     }
 
-    public String getUserType() {
+    public UserType getUserType() {
         return userType;
     }
 
