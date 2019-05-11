@@ -1,4 +1,4 @@
-package pl.sda.rav;
+package pl.sda.rav.users;
 
 import pl.sda.rav.users.User;
 

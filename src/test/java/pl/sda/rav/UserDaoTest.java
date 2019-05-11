@@ -1,6 +1,6 @@
 package pl.sda.rav;
 
-import static org.junit.jupiter.api.Assertions.*;
+import pl.sda.rav.users.UserDao;
 
 class UserDaoTest {
 
