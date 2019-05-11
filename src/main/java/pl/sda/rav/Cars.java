@@ -29,4 +29,13 @@ public class Cars extends Vehicles{
     public void setMaxDistanceKm(int maxDistanceKm) {
         this.maxDistanceKm = maxDistanceKm;
     }
+
+    @Override
+    public String toString() {
+        return "Cars{" +
+                super.toString()+
+                "bodyType='" + bodyType + '\'' +
+                ", maxDistanceKm=" + maxDistanceKm +
+                '}';
+    }
 }  // class Cars extends Vehicles

@@ -29,4 +29,13 @@ public class Motorboats extends Vehicles {
     public void setMaxDistanceMiles(int maxDistanceMiles) {
         this.maxDistanceMiles = maxDistanceMiles;
     }
+
+    @Override
+    public String toString() {
+        return "Motorboats{" +
+                super.toString()+
+                "displacementTon=" + displacementTon +
+                ", maxDistanceMiles=" + maxDistanceMiles +
+                '}';
+    }
 } //class Motorboats extends Vehicles
