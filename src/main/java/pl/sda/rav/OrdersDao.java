@@ -12,8 +12,10 @@ public class OrdersDao {
     }
 
     public boolean isAvalible(String vin, LocalDate start, LocalDate stop){
-
-        return false;
+        for (Order order : orders) {
+            if (order.getVehicle().getVin().equals(vin)) return !order.getOrderPeriod().isIncluded(start,stop);
+        }
+        return true;
     }
 
 }
