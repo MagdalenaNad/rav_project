@@ -1,4 +1,4 @@
-package pl.sda.rav;
+package pl.sda.rav.vehicles;
 
 import java.time.LocalDate;
 

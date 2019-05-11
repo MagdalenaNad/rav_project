@@ -1,11 +1,10 @@
 package pl.sda.rav;
 
 import org.junit.jupiter.api.Test;
+import pl.sda.rav.orders.Order;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class OrdersDaoTest {
 

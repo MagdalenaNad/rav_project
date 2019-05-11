@@ -1,7 +1,6 @@
-package pl.sda.rav;
+package pl.sda.rav.vehicles;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 
 // klasa do przechowywania i aktualizacji pojazdów
 public class VehiclesDao {

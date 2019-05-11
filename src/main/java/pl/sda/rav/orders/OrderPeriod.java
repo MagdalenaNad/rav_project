@@ -1,4 +1,4 @@
-package pl.sda.rav;
+package pl.sda.rav.orders;
 
 import java.time.LocalDate;
 import java.time.Period;

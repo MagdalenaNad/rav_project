@@ -1,6 +1,4 @@
-package pl.sda.rav;
-
-import java.time.LocalDate;
+package pl.sda.rav.vehicles;
 
 // klasa łodzie motorowe
 public class Motorboats extends Vehicles {
