@@ -1,9 +1,8 @@
 package pl.sda.rav.vehicles;
 
-import java.time.LocalDate;
-
+import java.lang.*;
 // klasa pojazdy -> root
-public abstract class Vehicles{  // pojazdy
+public abstract class Vehicles implements Comparable<Vehicles>{  // pojazdy
     private String vin;  // identyfikator
     private String name; // nazwa
     private int productionDate;  // data (rok) produkcji
@@ -14,7 +13,13 @@ public abstract class Vehicles{  // pojazdy
         this.productionDate = productionDate;
     }
 
-
+    @Override
+    public int compareTo(Vehicles o) {
+        if (productionDate.compareTo(o.productionDate) !=0){
+            return (productionDate.compareTo(o.productionDate));
+        }
+        return name.compareTo(o.name);
+    } // compareTo()
 
     public String getVin() {
         return vin;
