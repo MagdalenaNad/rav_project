@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 
 // klasa do przechowywania i aktualizacji pojazdów
-public class VehiclesDao implements Comparable<Vehicles>{
+public class VehiclesDao {
     private ArrayList<Vehicles> vehiclesArrayList;
 
     // konstruktor
@@ -16,11 +16,7 @@ public class VehiclesDao implements Comparable<Vehicles>{
         vehiclesArrayList.add(v);
     }
 
-    @Override
-    public int compareTo(Vehicles v) {
 
-        return (v.getProductionDate());
-    }
 
 /*
     public ArrayList<Vehicles> getVehiclesArrayList() {
