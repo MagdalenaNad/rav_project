@@ -3,11 +3,11 @@ package pl.sda.rav;
 public class Order {
     private static int COUNT=1;
     private int id;
-    private User customer;
+    private String customer;
     private Vehicles vehicle;
     private OrderPeriod orderPeriod;
 
-    public Order(User customer, Vehicles vehicle, OrderPeriod orderPeriod) {
+    public Order(String customer, Vehicles vehicle, OrderPeriod orderPeriod) {
         this.id = COUNT++;
         this.customer = customer;
         this.vehicle = vehicle;
@@ -18,7 +18,7 @@ public class Order {
         return id;
     }
 
-    public User getCustomer() {
+    public String getCustomer() {
         return customer;
     }
 

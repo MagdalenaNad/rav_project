@@ -8,7 +8,7 @@ public class Amphibians extends Vehicles {
     private int maxDistanceMiles;    // zasięg w milach morskich
 
     // konstruktor
-    public Amphibians(String vin, String name, LocalDate productionDate, double displacementTon, int maxDistanceKm, int maxDistanceMiles) {
+    public Amphibians(String vin, String name, int productionDate, double displacementTon, int maxDistanceKm, int maxDistanceMiles) {
         super(vin, name, productionDate);
         this.displacementTon = displacementTon;
         this.maxDistanceKm = maxDistanceKm;

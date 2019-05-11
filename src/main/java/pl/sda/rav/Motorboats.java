@@ -8,7 +8,7 @@ public class Motorboats extends Vehicles {
     private int maxDistanceMiles;     // max zasięg w milach morskich
 
     // konstruktor
-    public Motorboats(String vin, String name, LocalDate productionDate, double displacementTon, int maxDistanceMiles) {
+    public Motorboats(String vin, String name, int productionDate, double displacementTon, int maxDistanceMiles) {
         super(vin, name, productionDate);
         this.displacementTon = displacementTon;
         this.maxDistanceMiles = maxDistanceMiles;
