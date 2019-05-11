@@ -1,27 +1,24 @@
 package pl.sda.rav.vehicles;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 // klasa do przechowywania i aktualizacji pojazdów
-public class VehiclesDao implements Comparable<Vehicles>{
-    private ArrayList<Vehicles> vehiclesArrayList;
+public class VehiclesDao {
+    private ArrayList<Vehicles> vehiclesArrayList = new ArrayList<>();
 
-    // konstruktor
-    public VehiclesDao(ArrayList<Vehicles> vehiclesArrayList) {
-        this.vehiclesArrayList = vehiclesArrayList;
-    }// konstruktor
 
     public void addVehicle(Vehicles v) {
         vehiclesArrayList.add(v);
     }
 
-    @Override
-    public int compareTo(Vehicles v) {
-
-        return -1;
+    public ArrayList<Vehicles> getVehiclesArrayList() {
+        ArrayList<Vehicles> list = new ArrayList(vehiclesArrayList);
+        Collections.sort(list);
+        return list;
     }
 
-/*
+    /*
     public ArrayList<Vehicles> getVehiclesArrayList() {
         return vehiclesArrayList.sort();
     }
